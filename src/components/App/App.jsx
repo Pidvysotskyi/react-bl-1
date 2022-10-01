@@ -1,3 +1,4 @@
+import data from "../../data/data.json"
 import article from "../../data/article.json";
 import { BlogCard, Container, Section, Heading, Statistics, ForbesList, CryptoHistory } from "components";
 
@@ -13,7 +14,7 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
         </Heading>
-        <Statistics />
+        <Statistics data={data} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
